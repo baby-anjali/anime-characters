@@ -3,9 +3,14 @@
     <title>MyAnimeList</title>
     <style>
       body {
-        background-color: lavender;
         color: rgb(117, 93, 177);
         font-size: 30px;
+        margin: auto;
+      }
+      section {
+        background-color: lavender;
+        width: 90%;
+        margin: auto;
       }
       header > h1 {
         color: aliceblue;
@@ -17,73 +22,100 @@
         border-radius: 15px;
       }
       ol > li > p {
-        display: inline-block;
         height: 40px;
         margin: auto;
         margin-top: 30px;
         border: 3px solid aliceblue;
       }
+      img {
+        width: 200px;
+        display: block;
+      }
       a {
         text-decoration: none;
+        font-size: 20px;
+        margin-left: 10px;
         background-color: aliceblue;
         padding: 5px 5px 5px 5px;
         border: 1px solid olive;
         border-radius: 55% 5%;
       }
+      details summary {
+        list-style: none; /* Remove default symbol */
+        font-size: 20px; /* Make the symbol bigger */
+        cursor: pointer; /* Make it look clickable */
+      }
       footer {
         background-color: #03045e;
         color: aliceblue;
-        padding: 1px;
+        padding: 10px;
         text-align: center;
-        margin-top: 25%;
+        font-size: 16px;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Cool anime characters</h1>
-    </header>
     <section>
+      <header>
+        <h1>Cool anime characters</h1>
+      </header>
       <ol>
         <li>
           <p>
             Pink haired boy who only had his grandpa. When the grandpa dies he
             ends up collecting musty fingers to eat and die.
           </p>
-          <a href="./yuuji.html">click here </a>
+          <details>
+            <summary>click here</summary>
+            <img src="./yuji-itadori.webp" alt="Yuuji Itadori" />
+            <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
+              for more details
+            </a>
+          </details>
         </li>
         <li>
           <p>
             Pink haired boy who only had his grandpa. When the grandpa dies he
             ends up collecting musty fingers to eat and die.
           </p>
-          <a href="./yuuji.html">click here </a>
+          <details>
+            <summary>click here</summary>
+            <img src="./yuji-itadori.webp" alt="Yuuji Itadori" />
+            <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
+              for more details
+            </a>
+          </details>
         </li>
         <li>
           <p>
             Pink haired boy who only had his grandpa. When the grandpa dies he
             ends up collecting musty fingers to eat and die.
           </p>
-          <a href="./yuuji.html">click here </a>
+          <details>
+            <summary>click here</summary>
+            <img src="./yuji-itadori.webp" alt="Yuuji Itadori" />
+            <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
+              for more details
+            </a>
+          </details>
         </li>
         <li>
           <p>
             Pink haired boy who only had his grandpa. When the grandpa dies he
             ends up collecting musty fingers to eat and die.
           </p>
-          <a href="./yuuji.html">click here </a>
-        </li>
-        <li>
-          <p>
-            Pink haired boy who only had his grandpa. When the grandpa dies he
-            ends up collecting musty fingers to eat and die.
-          </p>
-          <a href="./yuuji.html">click here </a>
+          <details>
+            <summary>click here</summary>
+            <img src="./yuji-itadori.webp" alt="Yuuji Itadori" />
+            <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
+              for more details
+            </a>
+          </details>
         </li>
       </ol>
+      <footer>
+        <p>&copy;anne-fandom-2025</p>
+      </footer>
     </section>
-    <footer>
-      <p>&copy;anne</p>
-    </footer>
   </body>
 </html>
