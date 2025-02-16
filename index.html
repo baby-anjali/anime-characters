@@ -10,6 +10,8 @@
       }
       body {
         background-image: url("./assets/anime-moon-landscape.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
       }
       section {
         width: 800px;
@@ -17,7 +19,7 @@
         border: 1px solid rgba(0, 0, 0, 20%);
         border-radius: 10px;
         box-sizing: border-box;
-        background-color: rgba(255, 255, 255, 50%);
+        background-color: rgba(255, 255, 255, 60%);
       }
       h1,
       footer {
@@ -45,6 +47,7 @@
         border-radius: 5px;
         font-size: 16px;
         padding: 3px;
+        margin-bottom: 16px;
       }
       details summary:hover {
         background-color: olive;
@@ -57,12 +60,29 @@
         border-radius: 50px;
       }
       .answer > * {
-        margin: 8%;
+        margin: 3%;
+      }
+      .title {
+        font-size: 20px;
       }
       img {
         display: block;
-        width: 200px;
+        width: 150px;
         border-radius: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: brown;
+        font-weight: 700;
+        padding: 3px;
+        border-radius: 8px;
+        border: 2px solid beige;
+      }
+      a:hover {
+        background-color: goldenrod;
+        color: beige;
       }
       .yuuji {
         background-color: snow;
@@ -121,14 +141,14 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Itadori Yuuji</em>
+                <em class="title">Itadori Yuuji</em>
                 <img
                   class="yuuji"
                   src="./assets/yuji-itadori.webp"
                   alt="Itadori Yuuji"
                 />
                 <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -142,14 +162,14 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Kurosaki Ichigo</em>
+                <em class="title">Kurosaki Ichigo</em>
                 <img
                   class="ichigo"
                   src="./assets/ichigo.png"
                   alt="Kurosaki Ichigo"
                 />
                 <a href="https://bleach.fandom.com/wiki/Ichigo_Kurosaki">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -162,7 +182,7 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Hashibara Inosuke</em>
+                <em class="title">Hashibara Inosuke</em>
                 <img
                   class="inosuke"
                   src="./assets/inosuke.png"
@@ -171,7 +191,7 @@
                 <a
                   href="https://kimetsu-no-yaiba.fandom.com/wiki/Inosuke_Hashibira"
                 >
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -184,10 +204,10 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Eren Yeager</em>
+                <em class="title">Eren Yeager</em>
                 <img class="eren" src="./assets/eren.png" alt="Eren Yeager" />
                 <a href="https://attackontitan.fandom.com/wiki/Eren_Yeager">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -200,14 +220,14 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Hyuga Hinata</em>
+                <em class="title">Hyuga Hinata</em>
                 <img
                   class="hinata"
                   src="./assets/hinata.png"
                   alt="Hyuga Hinata"
                 />
                 <a href="https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -220,14 +240,14 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Mikasa Ackermann</em>
+                <em class="title">Mikasa Ackermann</em>
                 <img
                   class="mikasa"
                   src="./assets/mikasa.png"
                   alt="Mikasa Ackermann"
                 />
                 <a href="https://attackontitan.fandom.com/wiki/Mikasa_Ackerman">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -240,14 +260,14 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Uzumaki Naruto</em>
+                <em class="title">Uzumaki Naruto</em>
                 <img
                   class="naruto"
                   src="./assets/naruto.png"
                   alt="Uzumaki Naruto"
                 />
                 <a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -260,7 +280,7 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Shoyo Hinata</em>
+                <em class="title">Shoyo Hinata</em>
                 <img
                   class="haikyuu"
                   src="./assets/hinata-haikyuu.png"
@@ -269,7 +289,7 @@
                 <a
                   href="https://haikyuu.fandom.com/wiki/Sh%C5%8Dy%C5%8D_Hinata"
                 >
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -282,10 +302,10 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>Roronoa Zoro</em>
+                <em class="title">Roronoa Zoro</em>
                 <img class="zoro" src="./assets/zoro.png" alt="Roronoa Zoro" />
                 <a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
@@ -298,10 +318,10 @@
             <details>
               <summary>Answer</summary>
               <div class="answer">
-                <em>L Lawliet</em>
+                <em class="title">L Lawliet</em>
                 <img class="l" src="./assets/L.png" alt="L Lawliet" />
                 <a href="https://deathnote.fandom.com/wiki/L_(character)">
-                  for more info
+                  more info
                 </a>
               </div>
             </details>
