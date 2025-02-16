@@ -3,23 +3,101 @@
     <title>MyAnimeQuiz</title>
     <style>
       * {
-        font-family: "Open Sans", "Helvetica Neue", sans-serif;
+        font-family: sans-serif;
         font-size: 25px;
         font-weight: 300;
         letter-spacing: 0.5px;
       }
-
+      body {
+        background-image: url("./assets/anime-moon-landscape.jpg");
+      }
       section {
         width: 800px;
         margin: auto;
         border: 1px solid rgba(0, 0, 0, 20%);
-        border-radius: 5px;
+        border-radius: 10px;
         box-sizing: border-box;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 50%);
+      }
+      h1,
+      footer {
+        text-align: center;
+        font-size: 40px;
+        border-radius: 10px;
         padding: 10px;
+        background-color: purple;
+        font-weight: 500;
+        color: snow;
+        margin: 0;
+      }
+
+      .cp {
+        font-size: 12px;
+      }
+      li {
+        margin: 0px 5%;
+      }
+      p {
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      summary {
+        list-style: none;
+        cursor: pointer;
+        display: inline-block;
+        border: 3px solid darkolivegreen;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 3px;
+      }
+      details summary:hover {
+        background-color: olive;
+        color: snow;
+      }
+
+      .yuuji {
+        background-color: snow;
+        box-shadow: 2px 2px 4px pink;
+      }
+      .ichigo {
+        background-color: snow;
+        box-shadow: 2px 2px 4px orange;
+      }
+      .inosuke {
+        background-color: aliceblue;
+        box-shadow: 2px 2px 4px blue;
+      }
+      .eren {
+        background-color: azure;
+        box-shadow: 2px 2px 4px green;
+      }
+      .hinata {
+        background-color: rgba(255, 240, 245, 0.614);
+        box-shadow: 2px 2px 4px indigo;
+      }
+      .mikasa {
+        background-color: rgba(250, 235, 215, 0.385);
+        box-shadow: 2px 2px 4px rgba(165, 42, 42, 0.786);
+      }
+      .naruto {
+        background-color: snow;
+        box-shadow: 2px 2px 4px red;
+      }
+      .haikyuu {
+        background-color: rgba(255, 242, 220, 0.523);
+        box-shadow: 2px 2px 4px sandybrown;
+      }
+      .zoro {
+        background-color: azure;
+        box-shadow: 2px 2px 4px limegreen;
+      }
+      .l {
+        background-color: aliceblue;
+        box-shadow: 2px 2px 4px gray;
       }
       .answer > * {
-        margin: 5%;
+        margin: 8%;
       }
       img {
         display: block;
@@ -35,15 +113,19 @@
       <main>
         <ol>
           <li>
-            <p class="yuuji">
+            <p>
               Pink haired boy who only had his grandpa. When the grandpa dies he
               ends up collecting musty fingers to eat.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Itadori Yuuji</em>
-                <img src="./assets/yuji-itadori.webp" alt="Itadori Yuuji" />
+                <img
+                  class="yuuji"
+                  src="./assets/yuji-itadori.webp"
+                  alt="Itadori Yuuji"
+                />
                 <a href="https://jujutsu-kaisen.fandom.com/wiki/Yuji_Itadori">
                   for more info
                 </a>
@@ -51,16 +133,20 @@
             </details>
           </li>
           <li>
-            <p class="ichigo">
+            <p>
               Tough high schooler with wild orange hair spending his time
               fighting evil spirits, all while looking like he’d rather be
               napping.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Kurosaki Ichigo</em>
-                <img src="./assets/ichigo.png" alt="Kurosaki Ichigo" />
+                <img
+                  class="ichigo"
+                  src="./assets/ichigo.png"
+                  alt="Kurosaki Ichigo"
+                />
                 <a href="https://bleach.fandom.com/wiki/Ichigo_Kurosaki">
                   for more info
                 </a>
@@ -68,15 +154,19 @@
             </details>
           </li>
           <li>
-            <p class="inosuke">
+            <p>
               A boar-headed, muscle-packed bundle of chaos, with a face so
               pretty it could make you forget he’s covered in battle scars
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Hashibara Inosuke</em>
-                <img src="./assets/inosuke.png" alt="Hashibara Inosuke" />
+                <img
+                  class="inosuke"
+                  src="./assets/inosuke.png"
+                  alt="Hashibara Inosuke"
+                />
                 <a
                   href="https://kimetsu-no-yaiba.fandom.com/wiki/Inosuke_Hashibira"
                 >
@@ -86,15 +176,15 @@
             </details>
           </li>
           <li>
-            <p class="eren">
+            <p>
               Boy who woke from a nightmare decides to commit genocide after
               eating his father.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Eren Yeager</em>
-                <img src="./assets/eren.png" alt="Eren Yeager" />
+                <img class="eren" src="./assets/eren.png" alt="Eren Yeager" />
                 <a href="https://attackontitan.fandom.com/wiki/Eren_Yeager">
                   for more info
                 </a>
@@ -102,15 +192,19 @@
             </details>
           </li>
           <li>
-            <p class="hinata">
+            <p>
               The shy, sweet ninja looking like a cinnamon roll, but can totally
               kick your butt when you least expect it!
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Hyuga Hinata</em>
-                <img src="./assets/hinata.png" alt="Hyuga Hinata" />
+                <img
+                  class="hinata"
+                  src="./assets/hinata.png"
+                  alt="Hyuga Hinata"
+                />
                 <a href="https://naruto.fandom.com/wiki/Hinata_Hy%C5%ABga">
                   for more info
                 </a>
@@ -118,15 +212,19 @@
             </details>
           </li>
           <li>
-            <p class="mikasa">
+            <p>
               The “don’t mess with me” badass who could slice you in half while
               looking like she’s just out for a stroll.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Mikasa Ackermann</em>
-                <img src="./assets/mikasa.png" alt="Mikasa Ackermann" />
+                <img
+                  class="mikasa"
+                  src="./assets/mikasa.png"
+                  alt="Mikasa Ackermann"
+                />
                 <a href="https://attackontitan.fandom.com/wiki/Mikasa_Ackerman">
                   for more info
                 </a>
@@ -134,15 +232,19 @@
             </details>
           </li>
           <li>
-            <p class="naruto">
+            <p>
               A reckless, ramen-obsessed knucklehead with more heart than
-              brains, too dumb to realize when he should give up"
+              brains, too dumb to realize when he should give up
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Uzumaki Naruto</em>
-                <img src="./assets/naruto.png" alt="Uzumaki Naruto" />
+                <img
+                  class="naruto"
+                  src="./assets/naruto.png"
+                  alt="Uzumaki Naruto"
+                />
                 <a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki">
                   for more info
                 </a>
@@ -150,32 +252,37 @@
             </details>
           </li>
           <li>
-            <p class="haikyuu">
-              A reckless, ramen-obsessed knucklehead with more heart than
-              brains, too dumb to realize when he should give up"
+            <p>
+              A chihuahua who was too short for volleyball, so he rewrote
+              physics instead.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Shoyo Hinata</em>
-                <img src="./assets/hinata-haikyuu.png" alt="Shoyo Hinata" />
-                <a href="https://haikyuu.fandom.com/wiki/Shoyo_Hinata">
-                  <!-- get proper link -->
+                <img
+                  class="haikyuu"
+                  src="./assets/hinata-haikyuu.png"
+                  alt="Shoyo Hinata"
+                />
+                <a
+                  href="https://haikyuu.fandom.com/wiki/Sh%C5%8Dy%C5%8D_Hinata"
+                >
                   for more info
                 </a>
               </div>
             </details>
           </li>
           <li>
-            <p class="zoro">
-              A reckless, ramen-obsessed knucklehead with more heart than
-              brains, too dumb to realize when he should give up"
+            <p>
+              The only pirate who can turn raw determination into pure strength
+              and could get lost on his own ship.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">Roronoa Zoro</em>
-                <img src="./assets/zoro.png" alt="Roronoa Zoro" />
+                <img class="zoro" src="./assets/zoro.png" alt="Roronoa Zoro" />
                 <a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro">
                   for more info
                 </a>
@@ -183,15 +290,15 @@
             </details>
           </li>
           <li>
-            <p class="l">
-              A reckless, ramen-obsessed knucklehead with more heart than
-              brains, too dumb to realize when he should give up"
+            <p>
+              Fashion sense of a background character but the brain of a final
+              boss, his daily diet is 90% sugar and 10% pure intellect.
             </p>
             <details>
-              <summary>The answer is:</summary>
+              <summary>Answer</summary>
               <div class="answer">
                 <em id="title-yuuji">L Lawliet</em>
-                <img src="./assets/L.png" alt="L Lawliet" />
+                <img class="l" src="./assets/L.png" alt="L Lawliet" />
                 <a href="https://deathnote.fandom.com/wiki/L_(character)">
                   for more info
                 </a>
@@ -201,7 +308,7 @@
         </ol>
       </main>
       <footer>
-        <p>&copy;anne-fandom-2025</p>
+        <p class="cp">&copy;anne-fandom-2025</p>
       </footer>
     </section>
   </body>
